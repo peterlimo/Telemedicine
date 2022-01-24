@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_doctor_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/layout_doctor_card_cardCornerRadius">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstraintLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_doctor_card_ConstraintLayout1_height">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_avatar"
+            android:layout_width="@dimen/layout_doctor_card_civ_avatar_width"
+            android:layout_height="@dimen/layout_doctor_card_civ_avatar_height"
+            android:layout_marginStart="@dimen/layout_doctor_card_civ_avatar_marginStart"
+            app:layout_constraintBottom_toTopOf="@id/v_shadow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="@dimen/layout_doctor_card_tv_name_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_doctor_card_tv_name_marginStart"
+            android:fontFamily="@font/proximanova_semibold"
+            android:letterSpacing="0.05"
+            android:textColor="@color/colorInputFormName"
+            android:textSize="@dimen/layout_doctor_card_tv_name_textSize"
+            app:layout_constraintStart_toEndOf="@id/civ_avatar"
+            app:layout_constraintTop_toTopOf="@id/civ_avatar" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_doctor_card_tv_address_marginStart"
+            android:layout_marginTop="@dimen/layout_doctor_card_tv_address_marginTop"
+            android:fontFamily="@font/proximanova_regular"
+            android:letterSpacing="0.05"
+            android:textColor="@color/colorInputFormHint"
+            android:textSize="@dimen/layout_doctor_card_tv_address_textSize"
+            app:layout_constraintStart_toEndOf="@+id/iv_icon"
+            app:layout_constraintTop_toBottomOf="@id/tv_specialty" />
+
+        <TextView
+            android:id="@+id/tv_specialty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_doctor_card_tv_specialty_marginTop"
+            android:fontFamily="@font/proximanova_regular_italic"
+            android:letterSpacing="0.05"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/layout_doctor_card_tv_specialty_textSize"
+            app:layout_constraintStart_toStartOf="@id/tv_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+        <TextView
+            android:id="@+id/tv_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_doctor_card_tv_rating_marginStart"
+            android:fontFamily="@font/proximanova_regular"
+            android:letterSpacing="0.05"
+            android:textColor="@color/colorInputFormHint"
+            android:textSize="@dimen/layout_doctor_card_tv_rating_textSize"
+            app:layout_constraintStart_toEndOf="@+id/iv_star"
+            app:layout_constraintTop_toTopOf="@id/tv_name" />
+
+        <ImageView
+            android:id="@+id/iv_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_doctor_card_iv_star_marginStart"
+            android:layout_marginTop="@dimen/layout_doctor_card_iv_star_marginTop"
+            android:contentDescription="@string/icon_star"
+            app:layout_constraintStart_toEndOf="@id/tv_name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_star" />
+<!--размеры звездочки-->
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_doctor_card_iv_icon_marginStart"
+            android:layout_marginTop="@dimen/layout_doctor_card_iv_icon_marginTop"
+            android:contentDescription="@string/address"
+            app:layout_constraintStart_toEndOf="@id/civ_avatar"
+            app:layout_constraintTop_toBottomOf="@id/tv_specialty"
+            app:srcCompat="@drawable/ic_address" />
+
+        <View
+            android:id="@+id/v_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_doctor_card_v_shadow_height"
+            android:background="@color/colorDoctorCardShadow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments_home_screen.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstraintLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fragment_home_toolbar_height"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <FrameLayout
+                android:id="@+id/FrameLayout1_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="0dp"
+                android:paddingEnd="@dimen/fragment_home_FrameLayout1_1_paddingEnd">
+
+                <TextView
+                    android:id="@+id/tv_toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:letterSpacing="0.05"
+                    android:text="@string/doctor_list"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/fragment_home_tv_toolbar_title_textSize" />
+
+                <ImageView
+                    android:id="@+id/iv_more"
+                    android:layout_width="@dimen/fragment_home_iv_more_width"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:contentDescription="@string/morebutton"
+                    android:src="@drawable/ic_more_horiz_white" />
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:contentDescription="@string/backbutton"
+                    android:src="@drawable/ic_arrow_back_white" />
+            </FrameLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_doctor_list"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/colorDoctorList"
+            android:paddingStart="@dimen/fragment_home_rv_doctor_list_paddingStart"
+            android:paddingTop="@dimen/fragment_home_rv_doctor_list_paddingTop"
+            android:paddingEnd="@dimen/fragment_home_rv_doctor_list_paddingEnd"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

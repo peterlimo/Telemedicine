@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments_home_screen.RequestFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstraintLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/fragment_request_toolbar_height"
+            android:background="@color/colorPrimary"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <FrameLayout
+                android:id="@+id/FrameLayout1_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/fragment_request_FrameLayout1_1_paddingStart"
+                android:paddingEnd="@dimen/fragment_request_FrameLayout1_1_paddingEnd">
+
+                <TextView
+                    android:id="@+id/tv_toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:letterSpacing="0.05"
+                    android:text="@string/home"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/fragment_request_tv_toolbar_title_textSize" />
+
+                <ImageView
+                    android:id="@+id/iv_more"
+                    android:layout_width="@dimen/fragment_request_iv_more_width"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:contentDescription="@string/morebutton"
+                    android:src="@drawable/ic_more_horiz_white" />
+
+            </FrameLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:id="@+id/sv_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ConstraintLayout1_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_very_urgent"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/fragment_request_tv_very_urgent_height"
+                    android:layout_marginStart="@dimen/fragment_request_tv_very_urgent_marginStart"
+                    android:layout_marginTop="@dimen/fragment_request_tv_very_urgent_marginTop"
+                    android:layout_marginEnd="@dimen/fragment_request_tv_very_urgent_marginEnd"
+                    android:background="@drawable/btn_rounded_not_filled_green"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/very_urgent"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/fragment_request_tv_very_urgent_textSize"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fragment_request_tv_name_marginStart"
+                    android:layout_marginTop="@dimen/fragment_request_tv_name_marginTop"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="0.05"
+                    android:lineSpacingExtra="0dp"
+                    android:text="@string/name"
+                    android:textColor="@color/colorInputFormName"
+                    android:textSize="@dimen/fragment_request_tv_name_textSize"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_desease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_request_tv_desease_marginTop"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="0.05"
+                    android:lineSpacingExtra="0dp"
+                    android:text="@string/desease"
+                    android:textColor="@color/colorInputFormName"
+                    android:textSize="@dimen/fragment_request_tv_desease_textSize"
+                    app:layout_constraintStart_toStartOf="@id/tv_name"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_request_tv_location_marginTop"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="0.05"
+                    android:lineSpacingExtra="@dimen/fragment_request_tv_location_lineSpacingExtra"
+                    android:text="@string/location"
+                    android:textColor="@color/colorInputFormName"
+                    android:textSize="@dimen/fragment_request_tv_location_textSize"
+                    app:layout_constraintStart_toStartOf="@+id/tv_desease"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_request_tv_description_marginTop"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="0.05"
+                    android:lineSpacingExtra="0dp"
+                    android:text="@string/description_optional"
+                    android:textColor="@color/colorInputFormName"
+                    android:textSize="@dimen/fragment_request_tv_description_textSize"
+                    app:layout_constraintStart_toStartOf="@+id/tv_desease"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/fragment_request_et_name_height"
+                    android:layout_marginTop="@dimen/fragment_request_et_name_marginTop"
+                    android:layout_marginEnd="@dimen/fragment_request_et_name_marginEnd"
+                    android:background="@drawable/form_input"
+                    android:ems="10"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:hint="@string/your_name"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:letterSpacing="0.05"
+                    android:paddingStart="@dimen/fragment_request_et_name_paddingStart"
+                    android:paddingEnd="@dimen/fragment_request_et_name_paddingEnd"
+                    android:textColor="@color/colorInputFormHint"
+                    android:textColorHint="@color/colorInputFormHint"
+                    android:textSize="@dimen/fragment_request_et_name_textSize"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/tv_name"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/et_desease"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/fragment_request_et_desease_height"
+                    android:layout_marginTop="@dimen/fragment_request_et_desease_marginTop"
+                    android:background="@drawable/form_input"
+                    android:ems="10"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:hint="@string/what_is_your_illness"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:letterSpacing="0.05"
+                    android:paddingStart="@dimen/fragment_request_et_desease_paddingStart"
+                    android:paddingEnd="@dimen/fragment_request_et_desease_paddingEnd"
+                    android:textColor="@color/colorInputFormHint"
+                    android:textColorHint="@color/colorInputFormHint"
+                    android:textSize="@dimen/fragment_request_et_desease_textSize"
+                    app:layout_constraintEnd_toEndOf="@id/et_name"
+                    app:layout_constraintStart_toStartOf="@id/et_name"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/et_location"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/fragment_request_et_location_height"
+                    android:layout_marginTop="@dimen/fragment_request_et_location_marginTop"
+                    android:background="@drawable/form_input"
+                    android:ems="10"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:hint="@string/where_your_location"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:letterSpacing="0.05"
+                    android:paddingStart="@dimen/fragment_request_et_location_paddingStart"
+                    android:paddingEnd="@dimen/fragment_request_et_location_paddingEnd"
+                    android:textColor="@color/colorInputFormHint"
+                    android:textColorHint="@color/colorInputFormHint"
+                    android:textSize="@dimen/fragment_request_et_location_textSize"
+                    app:layout_constraintEnd_toEndOf="@+id/et_desease"
+                    app:layout_constraintStart_toStartOf="@+id/et_desease"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/et_description"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/fragment_request_et_description_height"
+                    android:layout_marginTop="@dimen/fragment_request_et_description_marginTop"
+                    android:background="@drawable/form_input"
+                    android:ems="10"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:gravity="start|top"
+                    android:hint="@string/describe_here"
+                    android:importantForAutofill="no"
+                    android:inputType="textMultiLine"
+                    android:letterSpacing="0.05"
+                    android:paddingStart="@dimen/fragment_request_et_description_paddingStart"
+                    android:paddingTop="@dimen/fragment_request_et_description_paddingTop"
+                    android:paddingEnd="@dimen/fragment_request_et_description_paddingEnd"
+                    android:paddingBottom="@dimen/fragment_request_et_description_paddingBottom"
+                    android:textColorHint="@color/colorInputFormHint"
+                    android:textSize="@dimen/fragment_request_et_description_textSize"
+                    app:layout_constraintEnd_toEndOf="@id/et_location"
+                    app:layout_constraintStart_toStartOf="@id/et_location"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/btn_request"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/fragment_request_btn_request_height"
+                    android:layout_marginStart="@dimen/fragment_request_btn_request_marginStart"
+                    android:layout_marginTop="@dimen/fragment_request_btn_request_marginTop"
+                    android:layout_marginEnd="@dimen/fragment_request_btn_request_marginEnd"
+                    android:layout_marginBottom="@dimen/fragment_request_btn_request_marginBottom"
+                    android:background="@drawable/btn_rounded_green_borderless"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:letterSpacing="0.05"
+                    android:text="@string/request"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/fragment_request_btn_request_textSize"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SignupScreen">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/activity_signup_toolbar_height"
+        android:background="@color/colorPrimary"
+        android:clipToPadding="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/proximanova_semibold"
+            android:letterSpacing="0.05"
+            android:text="@string/register"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/activity_signup_tv_toolbar_title_textSize" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/sv_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ConstraintLayout1_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_add_photos"
+                android:layout_width="@dimen/activity_signup_btn_add_photos_width"
+                android:layout_height="@dimen/activity_signup_btn_add_photos_height"
+                android:layout_marginTop="@dimen/activity_signup_btn_add_photos_marginTop"
+                android:background="@drawable/btn_circle"
+                android:drawableTop="@drawable/ic_add_photos_icon"
+                android:drawablePadding="@dimen/activity_signup_btn_add_photos_drawablePadding"
+                android:fontFamily="@font/proximanova_regular"
+                android:paddingTop="@dimen/activity_signup_btn_add_photos_paddingTop"
+                android:text="@string/add_photos"
+                android:textColor="@color/colorInputFormName"
+                android:textSize="@dimen/activity_signup_btn_add_photos_textSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_signup_tv_full_name_marginStart"
+                android:layout_marginTop="@dimen/activity_signup_tv_full_name_marginTop"
+                android:fontFamily="@font/proximanova_semibold"
+                android:letterSpacing="0.05"
+                android:text="@string/full_name"
+                android:textColor="@color/colorInputFormName"
+                android:textSize="@dimen/activity_signup_tv_full_name_textSize"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_add_photos" />
+
+            <TextView
+                android:id="@+id/tv_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_signup_tv_birthday_marginTop"
+                android:fontFamily="@font/proximanova_semibold"
+                android:letterSpacing="0.05"
+                android:text="@string/birthday"
+                android:textColor="@color/colorInputFormName"
+                android:textSize="@dimen/activity_signup_tv_birthday_textSize"
+                app:layout_constraintStart_toStartOf="@+id/tv_full_name"
+                app:layout_constraintTop_toBottomOf="@+id/et_full_name" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_signup_tv_email_marginTop"
+                android:fontFamily="@font/proximanova_semibold"
+                android:letterSpacing="0.05"
+                android:text="@string/email"
+                android:textColor="@color/colorInputFormName"
+                android:textSize="@dimen/activity_signup_tv_email_textSize"
+                app:layout_constraintStart_toStartOf="@+id/tv_full_name"
+                app:layout_constraintTop_toBottomOf="@+id/et_birthday" />
+
+            <TextView
+                android:id="@+id/tv_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_signup_tv_phone_number_marginTop"
+                android:fontFamily="@font/proximanova_semibold"
+                android:letterSpacing="0.05"
+                android:text="@string/phone_number"
+                android:textColor="@color/colorInputFormName"
+                android:textSize="@dimen/activity_signup_tv_phone_number_textSize"
+                app:layout_constraintStart_toStartOf="@+id/tv_full_name"
+                app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_signup_tv_location_marginTop"
+                android:fontFamily="@font/proximanova_semibold"
+                android:letterSpacing="0.05"
+                android:text="@string/location_address"
+                android:textColor="@color/colorInputFormName"
+                android:textSize="@dimen/activity_signup_tv_location_textSize"
+                app:layout_constraintStart_toStartOf="@+id/tv_full_name"
+                app:layout_constraintTop_toBottomOf="@+id/et_phone_number" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_signup_tv_location_marginTop"
+                android:fontFamily="@font/proximanova_semibold"
+                android:letterSpacing="0.05"
+                android:text="@string/username"
+                android:textColor="@color/colorInputFormName"
+                android:textSize="@dimen/activity_signup_tv_location_textSize"
+                app:layout_constraintStart_toStartOf="@+id/tv_full_name"
+                app:layout_constraintTop_toBottomOf="@+id/et_location" />
+
+            <TextView
+                android:id="@+id/tv_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_signup_tv_location_marginTop"
+                android:fontFamily="@font/proximanova_semibold"
+                android:letterSpacing="0.05"
+                android:text="@string/password"
+                android:textColor="@color/colorInputFormName"
+                android:textSize="@dimen/activity_signup_tv_location_textSize"
+                app:layout_constraintStart_toStartOf="@+id/tv_full_name"
+                app:layout_constraintTop_toBottomOf="@+id/et_username" />
+
+            <EditText
+                android:id="@+id/et_full_name"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/activity_signup_et_full_name_height"
+                android:layout_marginTop="@dimen/activity_signup_et_full_name_marginTop"
+                android:layout_marginEnd="@dimen/activity_signup_et_full_name_marginEnd"
+                android:background="@drawable/form_input"
+                android:ems="10"
+                android:fontFamily="@font/proximanova_regular"
+                android:hint="@string/your_full_name"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:letterSpacing="0.025"
+                android:paddingStart="@dimen/activity_signup_et_full_name_paddingStart"
+                android:paddingEnd="@dimen/activity_signup_et_full_name_paddingEnd"
+                android:textColor="@color/colorInputFormHint"
+                android:textColorHint="@color/colorInputFormHint"
+                android:textSize="@dimen/activity_signup_et_full_name_textSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_full_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_full_name" />
+
+            <EditText
+                android:id="@+id/et_birthday"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/activity_signup_et_birthday__height"
+                android:layout_marginTop="@dimen/activity_signup_et_birthday_marginTop"
+                android:background="@drawable/form_input"
+                android:ems="10"
+                android:fontFamily="@font/proximanova_regular"
+                android:hint="@string/dd_mm_yy"
+                android:importantForAutofill="no"
+                android:inputType="datetime"
+                android:letterSpacing="0.025"
+                android:paddingStart="@dimen/activity_signup_et_birthday_paddingStart"
+                android:paddingEnd="@dimen/activity_signup_et_birthday_paddingEnd"
+                android:textColor="@color/colorInputFormHint"
+                android:textColorHint="@color/colorInputFormHint"
+                android:textSize="@dimen/activity_signup_et_birthday_textSize"
+                app:layout_constraintEnd_toEndOf="@+id/et_full_name"
+                app:layout_constraintStart_toStartOf="@+id/et_full_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_birthday" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/activity_signup_et_email_height"
+                android:layout_marginTop="@dimen/activity_signup_et_email_marginTop"
+                android:background="@drawable/form_input"
+                android:ems="10"
+                android:fontFamily="@font/proximanova_regular"
+                android:hint="@string/your_email"
+                android:importantForAutofill="no"
+                android:inputType="textWebEmailAddress"
+                android:letterSpacing="0.025"
+                android:paddingStart="@dimen/activity_signup_et_email_paddingStart"
+                android:paddingEnd="@dimen/activity_signup_et_email_paddingEnd"
+                android:textColor="@color/colorInputFormHint"
+                android:textColorHint="@color/colorInputFormHint"
+                android:textSize="@dimen/activity_signup_et_email_textSize"
+                app:layout_constraintEnd_toEndOf="@+id/et_birthday"
+                app:layout_constraintStart_toStartOf="@+id/et_full_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_email" />
+
+            <EditText
+                android:id="@+id/et_phone_number"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/activity_signup_et_phone_number_height"
+                android:layout_marginTop="@dimen/activity_signup_et_phone_number_marginTop"
+                android:background="@drawable/form_input"
+                android:ems="10"
+                android:fontFamily="@font/proximanova_regular"
+                android:hint="@string/your_phone_number"
+                android:importantForAutofill="no"
+                android:inputType="phone"
+                android:letterSpacing="0.025"
+                android:paddingStart="@dimen/activity_signup_et_phone_number_paddingStart"
+                android:paddingEnd="@dimen/activity_signup_et_phone_number_paddingEnd"
+                android:textColor="@color/colorInputFormHint"
+                android:textColorHint="@color/colorInputFormHint"
+                android:textSize="@dimen/activity_signup_et_phone_number_textSize"
+                app:layout_constraintEnd_toEndOf="@+id/et_email"
+                app:layout_constraintStart_toStartOf="@+id/et_full_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_phone_number" />
+
+            <EditText
+                android:id="@+id/et_location"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/activity_signup_et_location_height"
+                android:layout_marginTop="@dimen/activity_signup_et_location_marginTop"
+                android:background="@drawable/form_input"
+                android:ems="10"
+                android:fontFamily="@font/proximanova_regular"
+                android:hint="@string/your_location"
+                android:importantForAutofill="no"
+                android:inputType="textPostalAddress"
+                android:letterSpacing="0.025"
+                android:paddingStart="@dimen/activity_signup_et_location_paddingStart"
+                android:paddingEnd="@dimen/activity_signup_et_location_paddingEnd"
+                android:textColor="@color/colorInputFormHint"
+                android:textColorHint="@color/colorInputFormHint"
+                android:textSize="@dimen/activity_signup_et_location_textSize"
+                app:layout_constraintEnd_toEndOf="@+id/et_email"
+                app:layout_constraintStart_toStartOf="@+id/et_full_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_location" />
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/activity_signup_et_location_height"
+                android:layout_marginTop="@dimen/activity_signup_et_location_marginTop"
+                android:background="@drawable/form_input"
+                android:ems="10"
+                android:fontFamily="@font/proximanova_regular"
+                android:hint="@string/your_username"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:letterSpacing="0.025"
+                android:paddingStart="@dimen/activity_signup_et_location_paddingStart"
+                android:paddingEnd="@dimen/activity_signup_et_location_paddingEnd"
+                android:textColor="@color/colorInputFormHint"
+                android:textColorHint="@color/colorInputFormHint"
+                android:textSize="@dimen/activity_signup_et_location_textSize"
+                app:layout_constraintEnd_toEndOf="@+id/et_email"
+                app:layout_constraintStart_toStartOf="@+id/et_full_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_username" />
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/activity_signup_et_location_height"
+                android:layout_marginTop="@dimen/activity_signup_et_location_marginTop"
+                android:background="@drawable/form_input"
+                android:ems="10"
+                android:fontFamily="@font/proximanova_regular"
+                android:hint="@string/your_password"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:letterSpacing="0.025"
+                android:paddingStart="@dimen/activity_signup_et_location_paddingStart"
+                android:paddingEnd="@dimen/activity_signup_et_location_paddingEnd"
+                android:textColor="@color/colorInputFormHint"
+                android:textColorHint="@color/colorInputFormHint"
+                android:textSize="@dimen/activity_signup_et_location_textSize"
+                app:layout_constraintEnd_toEndOf="@+id/et_email"
+                app:layout_constraintStart_toStartOf="@+id/et_full_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_password" />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/activity_signup_btn_next_height"
+                android:layout_marginStart="@dimen/activity_signup_btn_next_marginStart"
+                android:layout_marginTop="@dimen/activity_signup_btn_next_marginTop"
+                android:layout_marginEnd="@dimen/activity_signup_btn_next_marginEnd"
+                android:layout_marginBottom="@dimen/activity_signup_btn_next_marginBottom"
+                android:background="@drawable/btn_rounded_green_borderless"
+                android:fontFamily="@font/proximanova_semibold"
+                android:letterSpacing="0.05"
+                android:text="@string/next"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/activity_signup_btn_next_textSize"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/et_password"
+                app:layout_constraintStart_toStartOf="@id/et_password"
+                app:layout_constraintTop_toBottomOf="@id/et_password" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

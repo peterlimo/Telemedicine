@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    // activity_home
+
+    <dimen name="activity_home_screen_bnv_navigation_height">42dp</dimen>
+    <dimen name="activity_home_screen_bnv_navigation_paddingTop">10dp</dimen>
+    <dimen name="activity_home_screen_bnv_navigation_paddingBottom">0dp</dimen>
+    <dimen name="activity_home_screen_bnv_navigation_marginTop" format="float" type="dimen">6.375dp
+    </dimen>
+    <dimen name="activity_home_screen_bnv_navigation_itemIconSize">24dp</dimen>
+
+    <dimen name="activity_home_screen_fab_request_marginTop">3dp</dimen>
+    <dimen name="activity_home_screen_fab_request_marginBottom">6dp</dimen>
+    <dimen name="activity_home_screen_fab_request_fabCustomSize">43dp</dimen>
+    <dimen name="activity_home_fab_request_maxImageSize">24dp</dimen>
+
+    <dimen name="activity_home_screen_v_shadow_height" format="float" type="dimen">6.375dp</dimen>
+
+    <dimen name="activity_home_screen_coordinator_layout_height" format="float" type="dimen">48dp
+    </dimen>
+
+
+    // activity_login
+
+    <dimen name="activity_login_btn_sign_up_height">45dp</dimen>
+    <dimen name="activity_login_btn_sign_up_marginTop">36dp</dimen>
+    <dimen name="activity_login_btn_sign_up_textSize">14sp</dimen>
+
+    <dimen name="activity_login_btn_login_height">45dp</dimen>
+    <dimen name="activity_login_btn_login_marginTop">41dp</dimen>
+    <dimen name="activity_login_btn_login_textSize">14sp</dimen>
+
+    <dimen name="activity_login_tv_telemedicine_marginTop">68dp</dimen>
+    <dimen name="activity_login_tv_telemedicine_textSize">28sp</dimen>
+
+    <dimen name="activity_login_et_email_height">41dp</dimen>
+    <dimen name="activity_login_et_email_marginStart">27dp</dimen>
+    <dimen name="activity_login_et_email_marginTop">86dp</dimen>
+    <dimen name="activity_login_et_email_marginEnd">27dp</dimen>
+    <dimen name="activity_login_et_email_drawablePadding">18dp</dimen>
+    <dimen name="activity_login_et_email_paddingStart">14dp</dimen>
+    <dimen name="activity_login_et_email_paddingEnd">14dp</dimen>
+    <dimen name="activity_login_et_email_textSize">14sp</dimen>
+
+    <dimen name="activity_login_et_password_height">41dp</dimen>
+    <dimen name="activity_login_et_password_marginTop">22dp</dimen>
+    <dimen name="activity_login_et_password_drawablePadding">18dp</dimen>
+    <dimen name="activity_login_et_password_textSize">14sp</dimen>
+    <dimen name="activity_login_et_password_paddingStart">14dp</dimen>
+    <dimen name="activity_login_et_password_paddingEnd">14dp</dimen>
+
+    // activity_signup
+
+    <dimen name="activity_signup_toolbar_height">31dp</dimen>
+
+    <dimen name="activity_signup_tv_toolbar_title_textSize">13sp</dimen>
+
+    <dimen name="activity_signup_btn_add_photos_width">134dp</dimen>
+    <dimen name="activity_signup_btn_add_photos_height">134dp</dimen>
+    <dimen name="activity_signup_btn_add_photos_marginTop">56dp</dimen>
+    <dimen name="activity_signup_btn_add_photos_drawablePadding">-20dp</dimen>
+    <dimen name="activity_signup_btn_add_photos_paddingTop">27dp</dimen>
+    <dimen name="activity_signup_btn_add_photos_textSize">15sp</dimen>
+
+    <dimen name="activity_signup_tv_full_name_marginStart">17dp</dimen>
+    <dimen name="activity_signup_tv_full_name_marginTop">36dp</dimen>
+    <dimen name="activity_signup_tv_full_name_textSize">14sp</dimen>
+
+    <dimen name="activity_signup_tv_birthday_marginTop">23dp</dimen>
+    <dimen name="activity_signup_tv_birthday_textSize">14sp</dimen>
+
+    <dimen name="activity_signup_tv_email_marginTop">23dp</dimen>
+    <dimen name="activity_signup_tv_email_textSize">14sp</dimen>
+
+    <dimen name="activity_signup_tv_phone_number_marginTop">21dp</dimen>
+    <dimen name="activity_signup_tv_phone_number_textSize">14sp</dimen>
+
+    <dimen name="activity_signup_tv_location_marginTop">23dp</dimen>
+    <dimen name="activity_signup_tv_location_textSize">14sp</dimen>
+
+    <dimen name="activity_signup_et_full_name_height" format="float" type="dimen">45dp</dimen>
+    <dimen name="activity_signup_et_full_name_marginTop">13dp</dimen>
+    <dimen name="activity_signup_et_full_name_marginEnd">17dp</dimen>
+    <dimen name="activity_signup_et_full_name_paddingStart">17dp</dimen>
+    <dimen name="activity_signup_et_full_name_paddingEnd">17dp</dimen>
+    <dimen name="activity_signup_et_full_name_textSize">13sp</dimen>
+
+    <dimen name="activity_signup_et_birthday__height" format="float" type="dimen">45.5dp</dimen>
+    <dimen name="activity_signup_et_birthday_marginTop">13dp</dimen>
+    <dimen name="activity_signup_et_birthday_paddingStart">17dp</dimen>
+    <dimen name="activity_signup_et_birthday_paddingEnd">17dp</dimen>
+    <dimen name="activity_signup_et_birthday_textSize">13sp</dimen>
+
+    <dimen name="activity_signup_et_email_height" format="float" type="dimen">45.5dp</dimen>
+    <dimen name="activity_signup_et_email_marginTop">13dp</dimen>
+    <dimen name="activity_signup_et_email_paddingStart">17dp</dimen>
+    <dimen name="activity_signup_et_email_paddingEnd">17dp</dimen>
+    <dimen name="activity_signup_et_email_textSize">13sp</dimen>
+
+    <dimen name="activity_signup_et_phone_number_height" format="float" type="dimen">45.5dp</dimen>
+    <dimen name="activity_signup_et_phone_number_marginTop">13dp</dimen>
+    <dimen name="activity_signup_et_phone_number_paddingStart">17dp</dimen>
+    <dimen name="activity_signup_et_phone_number_paddingEnd">17dp</dimen>
+    <dimen name="activity_signup_et_phone_number_textSize">13sp</dimen>
+
+    <dimen name="activity_signup_et_location_height" format="float" type="dimen">45.5dp</dimen>
+    <dimen name="activity_signup_et_location_marginTop">13dp</dimen>
+    <dimen name="activity_signup_et_location_paddingStart">17dp</dimen>
+    <dimen name="activity_signup_et_location_paddingEnd">17dp</dimen>
+    <dimen name="activity_signup_et_location_textSize">13sp</dimen>
+
+    <dimen name="activity_signup_btn_next_height">47dp</dimen>
+    <dimen name="activity_signup_btn_next_marginStart">4dp</dimen>
+    <dimen name="activity_signup_btn_next_marginTop">27dp</dimen>
+    <dimen name="activity_signup_btn_next_marginEnd">4dp</dimen>
+    <dimen name="activity_signup_btn_next_marginBottom">26dp</dimen>
+    <dimen name="activity_signup_btn_next_textSize">14sp</dimen>
+
+    // activity_splash
+
+    <dimen name="activity_splash_tv_telemedicine_marginBottom">26dp</dimen>
+    <dimen name="activity_splash_tv_telemedicine_textSize">28sp</dimen>
+
+    // activity_welcome
+
+    <dimen name="activity_welcome_tv_welcome_marginTop">96dp</dimen>
+    <dimen name="activity_welcome_tv_welcome_textSize">26sp</dimen>
+
+    <dimen name="activity_welcome_tv_urgent_marginTop">50dp</dimen>
+    <dimen name="activity_welcome_tv_urgent_textSize">13sp</dimen>
+
+    <dimen name="activity_welcome_tv_quote_marginTop">24dp</dimen>
+    <dimen name="activity_welcome_tv_quote_lineSpacingExtra">8sp</dimen>
+    <dimen name="activity_welcome_tv_quote_textSize">11sp</dimen>
+
+    <dimen name="activity_welcome_btn_sign_up_height">45dp</dimen>
+    <dimen name="activity_welcome_btn_sign_up_marginStart">24dp</dimen>
+    <dimen name="activity_welcome_btn_sign_up_marginTop">83dp</dimen>
+    <dimen name="activity_welcome_btn_sign_up_marginEnd">24dp</dimen>
+    <dimen name="activity_welcome_btn_sign_up_textSize">14sp</dimen>
+
+    <dimen name="activity_welcome_btn_login_height">45dp</dimen>
+    <dimen name="activity_welcome_btn_login_marginTop">30dp</dimen>
+    <dimen name="activity_welcome_btn_login_textSize">14sp</dimen>
+
+    // fragment_doctor_details
+
+    <dimen name="fragment_doctor_details_toolbar_height">31dp</dimen>
+
+    <dimen name="fragment_doctor_details_FrameLayout1_1_paddingEnd">17dp</dimen>
+
+    <dimen name="fragment_doctor_details_tv_toolbar_title_textSize">13sp</dimen>
+
+    <dimen name="fragment_doctor_details_iv_more">31dp</dimen>
+
+    <dimen name="fragment_doctor_details_cv_doctor_card_marginStart">24dp</dimen>
+    <dimen name="fragment_doctor_details_cv_doctor_card_marginTop">18dp</dimen>
+    <dimen name="fragment_doctor_details_cv_doctor_card_marginEnd">24dp</dimen>
+
+    <dimen name="fragment_doctor_details_v_line_height">1dp</dimen>
+    <dimen name="fragment_doctor_details_v_line_marginTop">14dp</dimen>
+
+    <dimen name="fragment_doctor_details_civ_avatar_width">59dp</dimen>
+    <dimen name="fragment_doctor_details_civ_avatar_height">59dp</dimen>
+    <dimen name="fragment_doctor_details_civ_avatar_marginStart">14dp</dimen>
+    <dimen name="fragment_doctor_details_civ_avatar_marginTop">14dp</dimen>
+    <dimen name="fragment_doctor_details_civ_avatar_marginBottom">14dp</dimen>
+
+    <dimen name="fragment_doctor_details_tv_name_width">126dp</dimen>
+    <dimen name="fragment_doctor_details_tv_name_marginStart">19dp</dimen>
+    <dimen name="fragment_doctor_details_tv_name_marginTop">14dp</dimen>
+    <dimen name="fragment_doctor_details_tv_name_textSize" format="float" type="dimen">14.85sp
+    </dimen>
+
+    <dimen name="fragment_doctor_details_tv_specialty_width">121dp</dimen>
+    <dimen name="fragment_doctor_details_tv_specialty_height" format="float" type="dimen">14.6dp
+    </dimen>
+    <dimen name="fragment_doctor_details_tv_specialty_marginTop">2dp</dimen>
+    <dimen name="fragment_doctor_details_tv_specialty_textSize" format="float" type="dimen">14sp
+    </dimen>
+
+    <dimen name="fragment_doctor_details_iv_star0_marginTop">8dp</dimen>
+
+    <dimen name="fragment_doctor_details_iv_star1_marginStart" format="float" type="dimen">5dp
+    </dimen>
+
+    <dimen name="fragment_doctor_details_iv_star2_marginStart" format="float" type="dimen">5dp
+    </dimen>
+
+    <dimen name="fragment_doctor_details_iv_star3_marginStart" format="float" type="dimen">5dp
+    </dimen>
+
+    <dimen name="fragment_doctor_details_iv_star4_marginStart" format="float" type="dimen">5dp
+    </dimen>
+
+    <dimen name="fragment_doctor_details_tv_rating_height" format="float" type="dimen">17.2dp
+    </dimen>
+    <dimen name="fragment_doctor_details_tv_rating_marginStart">15dp</dimen>
+    <dimen name="fragment_doctor_details_tv_rating_textSize" format="float" type="dimen">14sp
+    </dimen>
+
+    <dimen name="fragment_doctor_details_tv_description_marginTop">25dp</dimen>
+    <dimen name="fragment_doctor_details_tv_description_textSize" format="float" type="dimen">
+        15sp
+    </dimen>
+
+    <dimen name="fragment_doctor_details_tv_description_output_marginTop">14dp</dimen>
+    <dimen name="fragment_doctor_details_tv_description_output_marginEnd">49dp</dimen>
+    <dimen name="fragment_doctor_details_tv_description_output_lineSpacingExtra">10sp</dimen>
+    <dimen name="fragment_doctor_details_tv_description_output_textSize" format="float" type="dimen">
+        12sp
+    </dimen>
+
+    <dimen name="fragment_doctor_details_tv_location_marginTop">41dp</dimen>
+    <dimen name="fragment_doctor_details_tv_location_textSize" format="float" type="dimen">15.7sp
+    </dimen>
+
+    <dimen name="fragment_doctor_details_tv_location_output_marginTop">9dp</dimen>
+    <dimen name="fragment_doctor_details_tv_location_output_drawablePadding">5dp</dimen>
+    <dimen name="fragment_doctor_details_tv_location_output_textSize" format="float" type="dimen">
+        14sp
+    </dimen>
+
+    <dimen name="fragment_doctor_details_FL_map_marginTop">14dp</dimen>
+
+    <dimen name="fragment_doctor_details_iv_map_height">176dp</dimen>
+
+    <dimen name="fragment_doctor_details_iv_dot_width">15dp</dimen>
+    <dimen name="fragment_doctor_details_iv_dot_height">15dp</dimen>
+    <dimen name="fragment_doctor_details_iv_dot_marginStart">98dp</dimen>
+    <dimen name="fragment_doctor_details_iv_dot_marginTop">75dp</dimen>
+
+    <dimen name="fragment_doctor_details_iv_area_width">41dp</dimen>
+    <dimen name="fragment_doctor_details_iv_area_height">41dp</dimen>
+    <dimen name="fragment_doctor_details_iv_area_marginStart" format="float" type="dimen">84dp
+    </dimen>
+    <dimen name="fragment_doctor_details_iv_area_marginTop" format="float" type="dimen">63dp
+    </dimen>
+
+    <dimen name="fragment_doctor_details_iv_area_border_width">41dp</dimen>
+    <dimen name="fragment_doctor_details_iv_area_border_height">41dp</dimen>
+    <dimen name="fragment_doctor_details_iv_area_border_marginStart" format="float" type="dimen">
+        84dp
+    </dimen>
+    <dimen name="fragment_doctor_details_iv_area_border_marginTop" format="float" type="dimen">
+        63dp
+    </dimen>
+
+    <dimen name="fragment_doctor_details_btn_confirm_height" format="float" type="dimen">48dp
+    </dimen>
+    <dimen name="fragment_doctor_details_btn_confirm_marginTop">28dp</dimen>
+    <dimen name="fragment_doctor_details_btn_confirm_marginBottom">23dp</dimen>
+    <dimen name="fragment_doctor_details_btn_confirm_textSize" format="float" type="dimen">14sp
+    </dimen>
+
+    // fragment_home
+
+    <dimen name="fragment_home_toolbar_height">31dp</dimen>
+
+    <dimen name="fragment_home_FrameLayout1_1_paddingEnd">17dp</dimen>
+
+    <dimen name="fragment_home_tv_toolbar_title_textSize">13sp</dimen>
+
+    <dimen name="fragment_home_iv_more_width">31dp</dimen>
+
+    <dimen name="fragment_home_rv_doctor_list_paddingStart">11dp</dimen>
+    <dimen name="fragment_home_rv_doctor_list_paddingTop">13dp</dimen>
+    <dimen name="fragment_home_rv_doctor_list_paddingEnd">13dp</dimen>
+
+    // fragment_notification
+
+    <dimen name="fragment_notification_toolbar_height">31dp</dimen>
+
+    <dimen name="fragment_notification_FrameLayout1_1_paddingEnd">17dp</dimen>
+
+    <dimen name="fragment_notification_toolbar_title_textSize">13sp</dimen>
+
+    <dimen name="fragment_notification_iv_more_width">31dp</dimen>
+
+    <dimen name="fragment_notification_btn_confirm_marginTop">45dp</dimen>
+
+    <dimen name="fragment_notification_iv_approve_width">120dp</dimen>
+    <dimen name="fragment_notification_iv_approve_height">120dp</dimen>
+    <dimen name="fragment_notification_iv_approve_marginTop">37dp</dimen>
+    <dimen name="fragment_notification_tv_approvement_textSize" format="float" type="dimen">16.6sp
+    </dimen>
+
+    <dimen name="fragment_notification_tv_quote_marginTop">29dp</dimen>
+    <dimen name="fragment_notification_tv_quote_lineSpacingExtra">9sp</dimen>
+    <dimen name="fragment_notification_tv_quote_textSize" format="float" type="dimen">13sp</dimen>
+
+    <dimen name="fragment_notification_tv_request_details_marginStart">23dp</dimen>
+    <dimen name="fragment_notification_tv_request_details_marginTop">54dp</dimen>
+    <dimen name="fragment_notification_tv_request_details_textSize" format="float" type="dimen">
+        16.6sp
+    </dimen>
+
+    <dimen name="fragment_notification_tv_user_name_marginTop">23dp</dimen>
+    <dimen name="fragment_notification_tv_user_name_textSize" format="float" type="dimen">15.7sp
+    </dimen>
+
+    <dimen name="fragment_notification_tv_name_output_marginTop">5dp</dimen>
+    <dimen name="fragment_notification_tv_name_output_textSize" format="float" type="dimen">16.6sp
+    </dimen>
+
+    <dimen name="fragment_notification_tv_desease_marginTop">21dp</dimen>
+    <dimen name="fragment_notification_tv_desease_textSize" format="float" type="dimen">15.7sp
+    </dimen>
+
+    <dimen name="fragment_notification_tv_desease_output_marginTop">5dp</dimen>
+    <dimen name="fragment_notification_tv_desease_output_textSize" format="float" type="dimen">
+        16.6sp
+    </dimen>
+
+    <dimen name="fragment_notification_tv_location_marginTop">21dp</dimen>
+    <dimen name="fragment_notification_tv_location_textSize" format="float" type="dimen">15.7sp
+    </dimen>
+
+    <dimen name="fragment_notification_tv_location_output_marginTop">5dp</dimen>
+    <dimen name="fragment_notification_tv_location_output_textSize" format="float" type="dimen">
+        16.6sp
+    </dimen>
+
+    <dimen name="fragment_notification_tv_description_marginTop">21dp</dimen>
+    <dimen name="fragment_notification_tv_description_textSize" format="float" type="dimen">15.7sp
+    </dimen>
+
+    <dimen name="fragment_notification_tv_description_output_marginTop">5dp</dimen>
+    <dimen name="fragment_notification_tv_description_output_marginEnd">26dp</dimen>
+    <dimen name="fragment_notification_tv_description_output_lineSpacingExtra">5sp</dimen>
+    <dimen name="fragment_notification_tv_description_output_textSize" format="float" type="dimen">
+        16.6sp
+    </dimen>
+
+    <dimen name="fragment_notification_tv_doctor_marginTop">36dp</dimen>
+    <dimen name="fragment_notification_tv_doctor_textSize" format="float" type="dimen">16.6sp
+    </dimen>
+
+    <dimen name="fragment_notification_cv_doctor_card_marginTop">18dp</dimen>
+
+    <dimen name="fragment_notification_civ_avatar_width">59dp</dimen>
+    <dimen name="fragment_notification_civ_avatar_height">59dp</dimen>
+    <dimen name="fragment_notification_civ_avatar_marginStart">14dp</dimen>
+    <dimen name="fragment_notification_civ_avatar_marginTop">14dp</dimen>
+    <dimen name="fragment_notification_civ_avatar_marginBottom">14dp</dimen>
+
+    <dimen name="fragment_notification_tv_name_width">160dp</dimen>
+    <dimen name="fragment_notification_tv_name_marginStart">19dp</dimen>
+    <dimen name="fragment_notification_tv_name_marginTop">14dp</dimen>
+    <dimen name="fragment_notification_tv_name_textSize" format="float" type="dimen">14.85sp</dimen>
+
+    <dimen name="fragment_notification_tv_specialty_width">135dp</dimen>
+    <dimen name="fragment_notification_tv_specialty_height" format="float" type="dimen">14.5dp
+    </dimen>
+    <dimen name="fragment_notification_tv_specialty_marginTop">2dp</dimen>
+    <dimen name="fragment_notification_tv_specialty_textSize" format="float" type="dimen">14sp
+    </dimen>
+
+    <dimen name="fragment_notification_iv_star0_marginTop">9dp</dimen>
+
+    <dimen name="fragment_notification_iv_star1_marginStart">5dp</dimen>
+
+    <dimen name="fragment_notification_iv_star2_marginStart">5dp</dimen>
+
+    <dimen name="fragment_notification_iv_star3_marginStart">5dp</dimen>
+
+    <dimen name="fragment_notification_iv_star4_marginStart">5dp</dimen>
+
+    <dimen name="fragment_notification_tv_rating_height" format="float" type="dimen">15.5dp</dimen>
+    <dimen name="fragment_notification_tv_rating_marginStart">15.3dp</dimen>
+    <dimen name="fragment_notification_tv_rating_textSize" format="float" type="dimen">14.85sp
+    </dimen>
+
+    <dimen name="fragment_notification_btn_confirm_height" format="float" type="dimen">48dp
+    </dimen>
+    <dimen name="fragment_notification_btn_confirm_textSize" format="float" type="dimen">14.85sp</dimen>
+
+    <dimen name="fragment_notification_btn_cancel_request_height" format="float" type="dimen">
+        48dp
+    </dimen>
+    <dimen name="fragment_notification_btn_cancel_request_marginTop">31dp</dimen>
+    <dimen name="fragment_notification_btn_cancel_request_marginBottom">20dp</dimen>
+    <dimen name="fragment_notification_btn_cancel_request_textSize" format="float" type="dimen">
+        14.85sp
+    </dimen>
+
+    // fragment_request
+
+    <dimen name="fragment_request_toolbar_height">31dp</dimen>
+
+    <dimen name="fragment_request_FrameLayout1_1_paddingStart">17dp</dimen>
+    <dimen name="fragment_request_FrameLayout1_1_paddingEnd">18dp</dimen>
+
+    <dimen name="fragment_request_tv_toolbar_title_textSize">13sp</dimen>
+
+    <dimen name="fragment_request_iv_more_width">31dp</dimen>
+
+    <dimen name="fragment_request_tv_very_urgent_height">48dp</dimen>
+    <dimen name="fragment_request_tv_very_urgent_marginStart">75dp</dimen>
+    <dimen name="fragment_request_tv_very_urgent_marginTop">38dp</dimen>
+    <dimen name="fragment_request_tv_very_urgent_marginEnd">75dp</dimen>
+    <dimen name="fragment_request_tv_very_urgent_textSize">13sp</dimen>
+
+    <dimen name="fragment_request_tv_name_marginStart">20dp</dimen>
+    <dimen name="fragment_request_tv_name_marginTop">125dp</dimen>
+    <dimen name="fragment_request_tv_name_textSize" format="float" type="dimen">14.85sp</dimen>
+
+    <dimen name="fragment_request_tv_desease_marginTop">228dp</dimen>
+    <dimen name="fragment_request_tv_desease_textSize" format="float" type="dimen">14.85sp</dimen>
+
+    <dimen name="fragment_request_tv_location_marginTop">331dp</dimen>
+    <dimen name="fragment_request_tv_location_lineSpacingExtra">0dp</dimen>
+    <dimen name="fragment_request_tv_location_textSize" format="float" type="dimen">14.85sp</dimen>
+
+    <dimen name="fragment_request_tv_description_marginTop">431dp</dimen>
+    <dimen name="fragment_request_tv_description_textSize" format="float" type="dimen">14.85sp
+    </dimen>
+
+    <dimen name="fragment_request_et_name_height" format="float" type="dimen">43.6dp</dimen>
+    <dimen name="fragment_request_et_name_marginTop">155dp</dimen>
+    <dimen name="fragment_request_et_name_marginEnd">18dp</dimen>
+    <dimen name="fragment_request_et_name_paddingStart">20dp</dimen>
+    <dimen name="fragment_request_et_name_paddingEnd">20dp</dimen>
+    <dimen name="fragment_request_et_name_textSize" format="float" type="dimen">11.7sp</dimen>
+
+    <dimen name="fragment_request_et_desease_height" format="float" type="dimen">43.6dp</dimen>
+    <dimen name="fragment_request_et_desease_marginTop">259dp</dimen>
+    <dimen name="fragment_request_et_desease_paddingStart">20dp</dimen>
+    <dimen name="fragment_request_et_desease_paddingEnd">20dp</dimen>
+    <dimen name="fragment_request_et_desease_textSize" format="float" type="dimen">11.7sp</dimen>
+
+    <dimen name="fragment_request_et_location_height" format="float" type="dimen">43.6dp</dimen>
+    <dimen name="fragment_request_et_location_marginTop">361dp</dimen>
+    <dimen name="fragment_request_et_location_paddingStart">20dp</dimen>
+    <dimen name="fragment_request_et_location_paddingEnd">20dp</dimen>
+    <dimen name="fragment_request_et_location_textSize" format="float" type="dimen">11.7sp</dimen>
+
+    <dimen name="fragment_request_et_description_height" format="float" type="dimen">87.3dp</dimen>
+    <dimen name="fragment_request_et_description_marginTop">462dp</dimen>
+    <dimen name="fragment_request_et_description_paddingStart">20dp</dimen>
+    <dimen name="fragment_request_et_description_paddingTop">17dp</dimen>
+    <dimen name="fragment_request_et_description_paddingEnd">20dp</dimen>
+    <dimen name="fragment_request_et_description_paddingBottom">17dp</dimen>
+    <dimen name="fragment_request_et_description_textSize" format="float" type="dimen">11.7sp
+    </dimen>
+
+    <dimen name="fragment_request_btn_request_height">48dp</dimen>
+    <dimen name="fragment_request_btn_request_marginStart">26dp</dimen>
+    <dimen name="fragment_request_btn_request_marginTop">574dp</dimen>
+    <dimen name="fragment_request_btn_request_marginBottom">29dp</dimen>
+    <dimen name="fragment_request_btn_request_marginEnd">23dp</dimen>
+    <dimen name="fragment_request_btn_request_textSize" format="float" type="dimen">14.85sp
+    </dimen>
+
+    // layout_doctor_card
+
+    <dimen name="layout_doctor_card_cardCornerRadius" format="float" type="dimen">2.125dp</dimen>
+
+    <dimen name="layout_doctor_card_ConstraintLayout1_height">101dp</dimen>
+
+    <dimen name="layout_doctor_card_civ_avatar_width">55dp</dimen>
+    <dimen name="layout_doctor_card_civ_avatar_height">55dp</dimen>
+    <dimen name="layout_doctor_card_civ_avatar_marginStart">11dp</dimen>
+
+    <dimen name="layout_doctor_card_tv_name_width">119dp</dimen>
+    <dimen name="layout_doctor_card_tv_name_marginStart">18dp</dimen>
+    <dimen name="layout_doctor_card_tv_name_textSize" format="float" type="dimen">14sp</dimen>
+
+    <dimen name="layout_doctor_card_tv_address_height" format="float" type="dimen">14dp</dimen>
+    <dimen name="layout_doctor_card_tv_address_marginStart">6dp</dimen>
+    <dimen name="layout_doctor_card_tv_address_marginTop">12dp</dimen>
+    <dimen name="layout_doctor_card_tv_address_textSize" format="float" type="dimen">13sp</dimen>
+
+    <dimen name="layout_doctor_card_tv_specialty_width">115dp</dimen>
+    <dimen name="layout_doctor_card_tv_specialty_height" format="float" type="dimen">14dp</dimen>
+    <dimen name="layout_doctor_card_tv_specialty_marginTop">2dp</dimen>
+    <dimen name="layout_doctor_card_tv_specialty_textSize" format="float" type="dimen">14sp
+    </dimen>
+
+    <dimen name="layout_doctor_card_tv_rating_height" format="float" type="dimen">15dp</dimen>
+    <dimen name="layout_doctor_card_tv_rating_marginStart">9dp</dimen>
+    <dimen name="layout_doctor_card_tv_rating_textSize" format="float" type="dimen">14sp</dimen>
+
+    <dimen name="layout_doctor_card_iv_star_marginStart">14dp</dimen>
+    <dimen name="layout_doctor_card_iv_star_marginTop">19dp</dimen>
+
+    <dimen name="layout_doctor_card_iv_icon_marginStart">15dp</dimen>
+    <dimen name="layout_doctor_card_iv_icon_marginTop">9dp</dimen>
+
+    <dimen name="layout_doctor_card_v_shadow_height" format="float" type="dimen">8dp</dimen>
+
+    // drawable_btn_circle
+
+    <dimen name="drawable_btn_circle_width">1dp</dimen>
+    <dimen name="drawable_btn_circle_dashWidth">4dp</dimen>
+    <dimen name="drawable_btn_circle_dashGap">6dp</dimen>
+
+    // drawable_btn_rounded_not_filled_green
+
+    <dimen name="drawable_btn_rounded_not_filled_green_bottomLeftRadius">23dp</dimen>
+    <dimen name="drawable_btn_rounded_not_filled_green_bottomRightRadius">23dp</dimen>
+    <dimen name="drawable_btn_rounded_not_filled_green_topLeftRadius">23dp</dimen>
+    <dimen name="drawable_btn_rounded_not_filled_green_topRightRadius">23dp</dimen>
+
+</resources>

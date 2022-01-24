@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Telemedicine</string>
+    <string name="telemedicine">Telemedicine</string>
+    <string name="welcome">Welcome</string>
+    <string name="Quote">Lorem ipsum dolor sit amet, conse \n
+        ctetur adipiscing elit, t. Ut enim ad veni\n
+        am, quis nostrud exercitation ullamco</string>
+    <string name="Quote_notif">Lorem ipsum dolor sit amet, consectetur \n
+        adipiscing elit, t. Ut enim ad minim venia\n
+        m, quis nostrud exercitation ullamco</string>
+    <string name="Approvement">Your Request Has Been \n
+        Approved</string>
+    <string name="signupbutton">signUpButton</string>
+    <string name="loginbutton">loginButton</string>
+    <string name="urgent">Urgent</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="email_adress">Email Address</string>
+    <string name="password">Password</string>
+    <string name="signup">signup</string>
+    <string name="add_photos">ADD PHOTOS</string>
+    <string name="register">Register</string>
+    <string name="full_name">Full Name</string>
+    <string name="your_full_name">Your Full Name</string>
+    <string name="birthday">Birthday</string>
+    <string name="dd_mm_yy">dd/mm/yy</string>
+    <string name="email">Email</string>
+    <string name="your_email">Your Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="your_phone_number">Your Phone Number</string>
+    <string name="location_address">Location/Address</string>
+    <string name="your_location">Your Location</string>
+    <string name="next">Next</string>
+    <string name="very_urgent">very urgent</string>
+    <string name="name">Name</string>
+    <string name="your_name">Your Name</string>
+    <string name="what_is_your_illness">What is your illness</string>
+    <string name="desease">Desease</string>
+    <string name="location">Location</string>
+    <string name="where_your_location">Where your location</string>
+    <string name="description_optional">Description (Optional)</string>
+    <string name="describe_here">Describe Here</string>
+    <string name="request">Request</string>
+    <string name="home">Home</string>
+    <string name="notification">Notification</string>
+    <string name="schedule">Schedule</string>
+    <string name="profile">Profile</string>
+    <string name="morebutton">moreButton</string>
+
+    <string name="doctor_list">Doctor List</string>
+    <string name="backbutton">backButton</string>
+    <string name="icon_star">icon_star</string>
+    <string name="address">address</string>
+    <string name="imageapprove">imageApprove</string>
+    <string name="request_details">Request Details</string>
+    <string name="description">Description</string>
+    <string name="doctor">Doctor</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel_request">Cancel Request</string>
+    <string name="short_description">Short Description</string>
+    <string name="doctor_details">Doctor Details</string>
+    <string name="username">Username</string>
+    <string name="your_username">Your Username</string>
+    <string name="your_password">Your Password</string>
+
+</resources>

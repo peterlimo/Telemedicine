@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#07DA5F</color>
+    <color name="colorPrimaryDark">#ced8dc</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="colorInputFormName">#37474e</color>
+    <color name="colorInputFormHint">#8fa4ad</color>
+    <color name="colorNavigationBarItem">#607d8b</color>
+    <color name="colorDoctorList">#f7f8f8</color>
+    <color name="colorDoctorCardShadow">#eeefef</color>
+    <color name="colorGivenInfo">#90a4ae</color>
+</resources>

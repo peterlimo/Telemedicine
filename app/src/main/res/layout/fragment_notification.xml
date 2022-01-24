@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".fragments_home_screen.NotificationFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstraintLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fragment_notification_toolbar_height"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <FrameLayout
+                android:id="@+id/FrameLayout1_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="0dp"
+                android:paddingEnd="@dimen/fragment_notification_FrameLayout1_1_paddingEnd">
+
+                <TextView
+                    android:id="@+id/tv_toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:letterSpacing="0.05"
+                    android:text="@string/notification"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/fragment_notification_toolbar_title_textSize" />
+
+                <ImageView
+                    android:id="@+id/iv_more"
+                    android:layout_width="@dimen/fragment_notification_iv_more_width"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:contentDescription="@string/morebutton"
+                    android:src="@drawable/ic_more_horiz_white" />
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:contentDescription="@string/backbutton"
+                    android:src="@drawable/ic_arrow_back_white" />
+            </FrameLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:id="@+id/sv_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ConstraintLayout1_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent">
+
+                <ImageView
+                    android:id="@+id/iv_approve"
+                    android:layout_width="@dimen/fragment_notification_iv_approve_width"
+                    android:layout_height="@dimen/fragment_notification_iv_approve_height"
+                    android:layout_marginTop="@dimen/fragment_notification_iv_approve_marginTop"
+                    android:background="@drawable/ic_circle"
+                    android:contentDescription="@string/imageapprove"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_approve"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_approvement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_notification_iv_approve_marginTop"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="0.05"
+                    android:text="@string/Approvement"
+                    android:textColor="@color/colorInputFormName"
+                    android:textSize="@dimen/fragment_notification_tv_approvement_textSize"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_approve" />
+
+                <TextView
+                    android:id="@+id/tv_quote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_notification_tv_quote_marginTop"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="0.05"
+                    android:lineSpacingExtra="@dimen/fragment_notification_tv_quote_lineSpacingExtra"
+                    android:text="@string/Quote_notif"
+                    android:textColor="@color/colorNavigationBarItem"
+                    android:textSize="@dimen/fragment_notification_tv_quote_textSize"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_approvement" />
+
+                <TextView
+                    android:id="@+id/tv_request_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fragment_notification_tv_request_details_marginStart"
+                    android:layout_marginTop="@dimen/fragment_notification_tv_request_details_marginTop"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:gravity="center_horizontal"
+                    android:text="@string/request_details"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/fragment_notification_tv_request_details_textSize"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_quote" />
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_notification_tv_user_name_marginTop"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="0.05"
+                    android:text="@string/name"
+                    android:textColor="@color/colorInputFormName"
+                    android:textSize="@dimen/fragment_notification_tv_user_name_textSize"
+                    app:layout_constraintStart_toStartOf="@+id/tv_request_details"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_request_details" />
+
+                <TextView
+                    android:id="@+id/tv_name_output"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_notification_tv_name_output_marginTop"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="0.05"
+                    android:textColor="@color/colorGivenInfo"
+                    android:textSize="@dimen/fragment_notification_tv_name_output_textSize"
+                    app:layout_constraintStart_toStartOf="@id/tv_user_name"
+                    app:layout_constraintTop_toBottomOf="@id/tv_user_name" />
+
+                <TextView
+                    android:id="@+id/tv_desease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_notification_tv_desease_marginTop"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="0.05"
+                    android:text="@string/desease"
+                    android:textColor="@color/colorInputFormName"
+                    android:textSize="@dimen/fragment_notification_tv_desease_textSize"
+                    app:layout_constraintStart_toStartOf="@id/tv_user_name"
+                    app:layout_constraintTop_toBottomOf="@id/tv_name_output" />
+
+                <TextView
+                    android:id="@+id/tv_desease_output"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_notification_tv_desease_output_marginTop"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="0.05"
+                    android:textColor="@color/colorGivenInfo"
+                    android:textSize="@dimen/fragment_notification_tv_desease_output_textSize"
+                    app:layout_constraintStart_toStartOf="@id/tv_user_name"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_desease" />
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_notification_tv_location_marginTop"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="0.05"
+                    android:text="@string/location"
+                    android:textColor="@color/colorInputFormName"
+                    android:textSize="@dimen/fragment_notification_tv_location_textSize"
+                    app:layout_constraintStart_toStartOf="@id/tv_user_name"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_desease_output" />
+
+                <TextView
+                    android:id="@+id/tv_location_output"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_notification_tv_location_output_marginTop"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="0.05"
+                    android:textColor="@color/colorGivenInfo"
+                    android:textSize="@dimen/fragment_notification_tv_location_output_textSize"
+                    app:layout_constraintStart_toStartOf="@id/tv_user_name"
+                    app:layout_constraintTop_toBottomOf="@id/tv_location" />
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_notification_tv_description_marginTop"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="0.05"
+                    android:text="@string/description"
+                    android:textColor="@color/colorInputFormName"
+                    android:textSize="@dimen/fragment_notification_tv_description_textSize"
+                    app:layout_constraintStart_toStartOf="@id/tv_user_name"
+                    app:layout_constraintTop_toBottomOf="@id/tv_location_output" />
+
+                <TextView
+                    android:id="@+id/tv_description_output"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_notification_tv_description_output_marginTop"
+                    android:layout_marginEnd="@dimen/fragment_notification_tv_description_output_marginEnd"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:lineSpacingExtra="@dimen/fragment_notification_tv_description_output_lineSpacingExtra"
+                    android:singleLine="false"
+                    android:textColor="@color/colorGivenInfo"
+                    android:textSize="@dimen/fragment_notification_tv_description_output_textSize"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/tv_user_name"
+                    app:layout_constraintTop_toBottomOf="@id/tv_description" />
+
+                <TextView
+                    android:id="@+id/tv_doctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_notification_tv_doctor_marginTop"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:gravity="center_horizontal"
+                    android:text="@string/doctor"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/fragment_notification_tv_doctor_textSize"
+                    app:layout_constraintStart_toStartOf="@+id/tv_request_details"
+                    app:layout_constraintTop_toBottomOf="@id/tv_description_output" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_doctor_card"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_notification_cv_doctor_card_marginTop"
+                    android:elevation="0dp"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="1dp"
+                    app:cardMaxElevation="0dp"
+                    app:layout_constraintEnd_toEndOf="@id/tv_description_output"
+                    app:layout_constraintStart_toStartOf="@id/tv_description_output"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_doctor">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/civ_avatar"
+                            android:layout_width="@dimen/fragment_notification_civ_avatar_width"
+                            android:layout_height="@dimen/fragment_notification_civ_avatar_height"
+                            android:layout_marginStart="@dimen/fragment_notification_civ_avatar_marginStart"
+                            android:layout_marginTop="@dimen/fragment_notification_civ_avatar_marginTop"
+                            android:layout_marginBottom="@dimen/fragment_notification_civ_avatar_marginBottom"
+                            android:src="@drawable/avatar"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/fragment_notification_tv_name_marginStart"
+                            android:layout_marginTop="@dimen/fragment_notification_tv_name_marginTop"
+                            android:fontFamily="@font/proximanova_semibold"
+                            android:letterSpacing="0.05"
+                            android:textColor="@color/colorInputFormName"
+                            android:textSize="@dimen/fragment_notification_tv_name_textSize"
+                            app:layout_constraintStart_toEndOf="@id/civ_avatar"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_specialty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/fragment_notification_tv_specialty_marginTop"
+                            android:fontFamily="@font/proximanova_regular_italic"
+                            android:letterSpacing="0.05"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/fragment_notification_tv_specialty_textSize"
+                            app:layout_constraintStart_toStartOf="@id/tv_name"
+                            app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+                        <ImageView
+                            android:id="@+id/iv_star0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/fragment_notification_iv_star0_marginTop"
+                            android:contentDescription="@string/icon_star"
+                            app:layout_constraintStart_toStartOf="@id/tv_specialty"
+                            app:layout_constraintTop_toBottomOf="@id/tv_specialty"
+                            app:srcCompat="@drawable/ic_star" />
+
+                        <ImageView
+                            android:id="@+id/iv_star1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/fragment_notification_iv_star1_marginStart"
+                            android:contentDescription="@string/icon_star"
+                            app:layout_constraintLeft_toRightOf="@id/iv_star0"
+                            app:layout_constraintTop_toTopOf="@id/iv_star0"
+                            app:srcCompat="@drawable/ic_star" />
+
+                        <ImageView
+                            android:id="@+id/iv_star2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/fragment_notification_iv_star2_marginStart"
+                            android:contentDescription="@string/icon_star"
+                            app:layout_constraintLeft_toRightOf="@id/iv_star1"
+                            app:layout_constraintTop_toTopOf="@id/iv_star1"
+                            app:srcCompat="@drawable/ic_star" />
+
+                        <ImageView
+                            android:id="@+id/iv_star3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/fragment_notification_iv_star3_marginStart"
+                            android:contentDescription="@string/icon_star"
+                            app:layout_constraintLeft_toRightOf="@id/iv_star2"
+                            app:layout_constraintTop_toTopOf="@id/iv_star2"
+                            app:srcCompat="@drawable/ic_star" />
+
+                        <ImageView
+                            android:id="@+id/iv_star4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/fragment_notification_iv_star4_marginStart"
+                            android:contentDescription="@string/icon_star"
+                            app:layout_constraintLeft_toRightOf="@id/iv_star3"
+                            app:layout_constraintTop_toTopOf="@id/iv_star3"
+                            app:srcCompat="@drawable/ic_star" />
+
+                        <TextView
+                            android:id="@+id/tv_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/fragment_notification_tv_rating_marginStart"
+                            android:fontFamily="@font/proximanova_regular"
+                            android:letterSpacing="0.05"
+                            android:textColor="@color/colorInputFormHint"
+                            android:textSize="@dimen/fragment_notification_tv_rating_textSize"
+                            app:layout_constraintStart_toEndOf="@id/iv_star4"
+                            app:layout_constraintTop_toTopOf="@id/iv_star4" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/btn_confirm"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/fragment_notification_btn_confirm_height"
+                    android:layout_marginTop="@dimen/fragment_notification_btn_confirm_marginTop"
+                    android:background="@drawable/btn_rounded_green_borderless"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:text="@string/confirm"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/fragment_notification_btn_confirm_textSize"
+                    app:layout_constraintLeft_toLeftOf="@id/cv_doctor_card"
+                    app:layout_constraintRight_toRightOf="@id/cv_doctor_card"
+                    app:layout_constraintTop_toBottomOf="@id/cv_doctor_card" />
+
+                <Button
+                    android:id="@+id/btn_cancel_request"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/fragment_notification_btn_cancel_request_height"
+                    android:layout_marginTop="@dimen/fragment_notification_btn_cancel_request_marginTop"
+                    android:layout_marginBottom="@dimen/fragment_notification_btn_cancel_request_marginBottom"
+                    android:background="@drawable/btn_rounded_not_filled_gray"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:text="@string/cancel_request"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorInputFormHint"
+                    android:textSize="@dimen/fragment_notification_btn_cancel_request_textSize"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@id/btn_confirm"
+                    app:layout_constraintRight_toRightOf="@id/btn_confirm"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_confirm" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

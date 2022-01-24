@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".fragments_home_screen.DoctorDetailsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstraintLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fragment_doctor_details_toolbar_height"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <FrameLayout
+                android:id="@+id/FrameLayout1_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="0dp"
+                android:paddingEnd="@dimen/fragment_doctor_details_FrameLayout1_1_paddingEnd">
+
+                <TextView
+                    android:id="@+id/tv_toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:letterSpacing="0.05"
+                    android:text="@string/doctor_details"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/fragment_doctor_details_tv_toolbar_title_textSize" />
+
+                <ImageView
+                    android:id="@+id/iv_more"
+                    android:layout_width="@dimen/fragment_doctor_details_iv_more"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:contentDescription="@string/morebutton"
+                    android:src="@drawable/ic_more_horiz_white" />
+
+                <ImageView
+                    android:id="@+id/iv_back_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:contentDescription="@string/backbutton"
+                    android:src="@drawable/ic_arrow_back_white" />
+            </FrameLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:id="@+id/sv_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ConstraintLayout1_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_doctor_card"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/fragment_doctor_details_cv_doctor_card_marginStart"
+                    android:layout_marginTop="@dimen/fragment_doctor_details_cv_doctor_card_marginTop"
+                    android:layout_marginEnd="@dimen/fragment_doctor_details_cv_doctor_card_marginEnd"
+                    android:elevation="0dp"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="0dp"
+                    app:cardMaxElevation="0dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/ConstraintLayout_1_1_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <View
+                            android:id="@+id/v_line"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/fragment_doctor_details_v_line_height"
+                            android:layout_marginTop="@dimen/fragment_doctor_details_v_line_marginTop"
+                            android:background="#eceff1"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/civ_avatar" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/civ_avatar"
+                            android:layout_width="@dimen/fragment_doctor_details_civ_avatar_width"
+                            android:layout_height="@dimen/fragment_doctor_details_civ_avatar_height"
+                            android:layout_marginStart="@dimen/fragment_doctor_details_civ_avatar_marginStart"
+                            android:layout_marginTop="@dimen/fragment_doctor_details_civ_avatar_marginTop"
+                            android:layout_marginBottom="@dimen/fragment_doctor_details_civ_avatar_marginBottom"
+                            app:layout_constraintBottom_toTopOf="@id/v_line"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/fragment_doctor_details_tv_name_marginStart"
+                            android:layout_marginTop="@dimen/fragment_doctor_details_tv_name_marginTop"
+                            android:fontFamily="@font/proximanova_semibold"
+                            android:letterSpacing="0.05"
+                            android:text="Dudung Sokmati"
+                            android:textColor="@color/colorInputFormName"
+                            android:textSize="@dimen/fragment_doctor_details_tv_name_textSize"
+                            app:layout_constraintStart_toEndOf="@id/civ_avatar"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_specialty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/fragment_doctor_details_tv_specialty_marginTop"
+                            android:fontFamily="@font/proximanova_regular_italic"
+                            android:letterSpacing="0.05"
+                            android:text="Eye Specialist"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/fragment_doctor_details_tv_specialty_textSize"
+                            app:layout_constraintStart_toStartOf="@id/tv_name"
+                            app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+                        <ImageView
+                            android:id="@+id/iv_star0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/fragment_doctor_details_iv_star0_marginTop"
+                            android:contentDescription="@string/icon_star"
+                            app:layout_constraintStart_toStartOf="@id/tv_specialty"
+                            app:layout_constraintTop_toBottomOf="@id/tv_specialty"
+                            app:srcCompat="@drawable/ic_star" />
+
+                        <ImageView
+                            android:id="@+id/iv_star1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/fragment_doctor_details_iv_star1_marginStart"
+                            android:contentDescription="@string/icon_star"
+                            app:layout_constraintLeft_toRightOf="@id/iv_star0"
+                            app:layout_constraintTop_toTopOf="@id/iv_star0"
+                            app:srcCompat="@drawable/ic_star" />
+
+                        <ImageView
+                            android:id="@+id/iv_star2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/fragment_doctor_details_iv_star2_marginStart"
+                            android:contentDescription="@string/icon_star"
+                            app:layout_constraintLeft_toRightOf="@id/iv_star1"
+                            app:layout_constraintTop_toTopOf="@id/iv_star1"
+                            app:srcCompat="@drawable/ic_star" />
+
+                        <ImageView
+                            android:id="@+id/iv_star3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/fragment_doctor_details_iv_star3_marginStart"
+                            android:contentDescription="@string/icon_star"
+                            app:layout_constraintLeft_toRightOf="@id/iv_star2"
+                            app:layout_constraintTop_toTopOf="@id/iv_star2"
+                            app:srcCompat="@drawable/ic_star" />
+
+                        <ImageView
+                            android:id="@+id/iv_star4"
+                            android:layout_width="wrap_content"
+                            android:layout_marginStart="@dimen/fragment_doctor_details_iv_star4_marginStart"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@string/icon_star"
+                            app:layout_constraintLeft_toRightOf="@id/iv_star3"
+                            app:layout_constraintTop_toTopOf="@id/iv_star3"
+                            app:srcCompat="@drawable/ic_star" />
+
+                        <TextView
+                            android:id="@+id/tv_rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/fragment_doctor_details_tv_rating_marginStart"
+                            android:fontFamily="@font/proximanova_regular"
+                            android:letterSpacing="0.05"
+                            android:text="4.9"
+                            android:textColor="@color/colorInputFormHint"
+                            android:textSize="@dimen/fragment_doctor_details_tv_rating_textSize"
+                            app:layout_constraintStart_toEndOf="@id/iv_star4"
+                            app:layout_constraintTop_toTopOf="@id/iv_star4" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_doctor_details_tv_description_marginTop"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:gravity="center_horizontal"
+                    android:text="@string/short_description"
+                    android:textColor="@color/colorInputFormName"
+                    android:textSize="@dimen/fragment_doctor_details_tv_description_textSize"
+                    app:layout_constraintLeft_toLeftOf="@id/cv_doctor_card"
+                    app:layout_constraintTop_toBottomOf="@id/cv_doctor_card" />
+
+                <TextView
+                    android:id="@+id/tv_description_output"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_doctor_details_tv_description_output_marginTop"
+                    android:layout_marginEnd="@dimen/fragment_doctor_details_tv_description_output_marginEnd"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:lineSpacingExtra="@dimen/fragment_doctor_details_tv_description_output_lineSpacingExtra"
+                    android:singleLine="false"
+                    android:text="@string/Quote_notif"
+                    android:textColor="@color/colorNavigationBarItem"
+                    android:textSize="@dimen/fragment_doctor_details_tv_description_output_textSize"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/tv_description"
+                    app:layout_constraintTop_toBottomOf="@id/tv_description" />
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_doctor_details_tv_location_marginTop"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="0.05"
+                    android:text="@string/location"
+                    android:textColor="@color/colorInputFormName"
+                    android:textSize="@dimen/fragment_doctor_details_tv_location_textSize"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_description_output"
+                    app:layout_constraintTop_toBottomOf="@id/tv_description_output" />
+
+                <TextView
+                    android:id="@+id/tv_location_output"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_doctor_details_tv_location_output_marginTop"
+                    android:drawableStart="@drawable/ic_address"
+                    android:drawablePadding="@dimen/fragment_doctor_details_tv_location_output_drawablePadding"
+                    android:fontFamily="@font/proximanova_regular"
+                    android:gravity="center_vertical"
+                    android:letterSpacing="0.05"
+                    android:text="St. Broxlyn 212"
+                    android:textColor="@color/colorNavigationBarItem"
+                    android:textSize="@dimen/fragment_doctor_details_tv_location_output_textSize"
+                    app:layout_constraintLeft_toLeftOf="@id/tv_location"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_location" />
+
+                <FrameLayout
+                    android:id="@+id/FL_map"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_doctor_details_FL_map_marginTop"
+                    app:layout_constraintLeft_toLeftOf="@id/cv_doctor_card"
+                    app:layout_constraintRight_toRightOf="@id/cv_doctor_card"
+                    app:layout_constraintTop_toBottomOf="@id/tv_location_output">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_map"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fragment_doctor_details_iv_map_height"
+                        app:srcCompat="@drawable/map" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_dot"
+                        android:layout_width="@dimen/fragment_doctor_details_iv_dot_width"
+                        android:layout_height="@dimen/fragment_doctor_details_iv_dot_height"
+                        android:layout_marginStart="@dimen/fragment_doctor_details_iv_dot_marginStart"
+                        android:layout_marginTop="@dimen/fragment_doctor_details_iv_dot_marginTop"
+                        android:background="@drawable/btn_rounded_green_borderless" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_area"
+                        android:layout_width="@dimen/fragment_doctor_details_iv_area_width"
+                        android:layout_height="@dimen/fragment_doctor_details_iv_area_height"
+                        android:layout_marginStart="@dimen/fragment_doctor_details_iv_area_marginStart"
+                        android:layout_marginTop="@dimen/fragment_doctor_details_iv_area_marginTop"
+                        android:alpha="0.3"
+                        android:background="@drawable/btn_rounded_green_borderless" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_area_border"
+                        android:layout_width="@dimen/fragment_doctor_details_iv_area_border_width"
+                        android:layout_height="@dimen/fragment_doctor_details_iv_area_border_height"
+                        android:layout_marginStart="@dimen/fragment_doctor_details_iv_area_border_marginStart"
+                        android:layout_marginTop="@dimen/fragment_doctor_details_iv_area_border_marginTop"
+                        android:background="@drawable/btn_rounded_not_filled_green" />
+
+                </FrameLayout>
+
+                <Button
+                    android:id="@+id/btn_confirm"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/fragment_doctor_details_btn_confirm_height"
+                    android:layout_marginTop="@dimen/fragment_doctor_details_btn_confirm_marginTop"
+                    android:layout_marginBottom="@dimen/fragment_doctor_details_btn_confirm_marginBottom"
+                    android:background="@drawable/btn_rounded_green_borderless"
+                    android:fontFamily="@font/proximanova_semibold"
+                    android:letterSpacing="0.05"
+                    android:text="@string/request"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/fragment_doctor_details_btn_confirm_textSize"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@id/cv_doctor_card"
+                    app:layout_constraintRight_toRightOf="@id/cv_doctor_card"
+                    app:layout_constraintTop_toBottomOf="@id/FL_map" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
